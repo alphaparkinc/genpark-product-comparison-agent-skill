@@ -2,28 +2,50 @@
   "name": "genpark-product-comparison-agent-skill",
   "description": "GenPark multi-product comparison agent skill. Evaluates feature matrices, user priorities, pricing parameters and outputs structured markdown comparisons and product recommendation ratings.",
   "version": "1.0.0",
-  "author": "alphaparkinc",
+  "author": "genpark",
   "inputs": {
     "products": {
       "type": "array",
       "description": "List of products to compare.",
       "items": {
         "properties": {
-          "sku": { "type": "string" },
-          "name": { "type": "string" },
-          "price": { "type": "number" },
-          "rating": { "type": "number" },
-          "features": { "type": "object" }
+          "sku": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "rating": {
+            "type": "number"
+          },
+          "features": {
+            "type": "object"
+          }
         },
-        "required": ["sku", "name", "price", "rating", "features"]
+        "required": [
+          "sku",
+          "name",
+          "price",
+          "rating",
+          "features"
+        ]
       }
     },
     "priorities": {
       "type": "object",
       "description": "User attribute priorities (e.g. price, performance) weighted 1-5.",
       "properties": {
-        "price_importance": { "type": "integer", "default": 3 },
-        "feature_richness": { "type": "integer", "default": 3 }
+        "price_importance": {
+          "type": "integer",
+          "default": 3
+        },
+        "feature_richness": {
+          "type": "integer",
+          "default": 3
+        }
       }
     }
   },
@@ -35,9 +57,15 @@
       "type": "array",
       "items": {
         "properties": {
-          "sku": { "type": "string" },
-          "score": { "type": "number" },
-          "verdict": { "type": "string" }
+          "sku": {
+            "type": "string"
+          },
+          "score": {
+            "type": "number"
+          },
+          "verdict": {
+            "type": "string"
+          }
         }
       }
     }
