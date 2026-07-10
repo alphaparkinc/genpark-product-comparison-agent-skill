@@ -1,4 +1,4 @@
-# GenPark Product Comparison Agent Skill
+# genpark-product-comparison-agent-skill
 
 This repository contains the **GenPark Product Comparison Agent Skill** — an agent configuration skill config (`skill.json`), a production-ready Python SDK client (`comparison_agent.py`), and executable verification tests. It is designed to compare multiple retail/product SKUs, apply dynamic weights to user pricing vs. features priorities, and generate structured markdown tables.
 
